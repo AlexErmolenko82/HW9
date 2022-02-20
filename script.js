@@ -39,4 +39,4 @@ console.log(employee1);
 console.log(employee2);
 
 console.log(`${employee1.fullName}, year salary: ${employee1.showYearSalary()}`);
-console.log(`${employee1.fullName}, year salary: ${employee2.showYearSalary()}`);
+console.log(`${employee2.fullName}, year salary: ${employee2.showYearSalary()}`);
