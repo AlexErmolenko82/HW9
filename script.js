@@ -39,5 +39,5 @@ const employee2 = new Employee("Adam", "Johnson", 24, "PythonDeveloper", 500);
 console.log(employee1);
 console.log(employee2);
 
-console.log(`${employee1.fullName}, year salay: ${Employee.showYearSalary(employee1)}`);
-console.log(`${employee2.fullName}, year salay: ${Employee.showYearSalary(employee2)}`);
+console.log(`${employee1.fullName}, year salary: ${Employee.showYearSalary(employee1)}`);
+console.log(`${employee2.fullName}, year salary: ${Employee.showYearSalary(employee2)}`);
