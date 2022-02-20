@@ -11,10 +11,6 @@
 // добавить метод, который будет считать годовую зарплату сотрудника
 // Создать 2 экземпляра этого класса (по аналогии с cat1, cat2 - как делали на занятии).
 
-
-
-
-
 class Employee {
     static holidaysInYear = 18;
     constructor(firstName, lastName, age, jobPosition, salary) {
@@ -27,11 +23,14 @@ class Employee {
     get fullName() {
       return `${this.firstName} ${this.lastName}`;
     }
+    showYearSalary() {
+        return this.salary * 12;
+    };
 }
 
-Object.prototype.showYearSalary = function (employee) {
-    return employee.salary * 12;
-};
+// Object.prototype.showYearSalary = function (employee) {
+//     return employee.salary * 12;
+// };
 
 const employee1 = new Employee("John", "Smith", 24, "JSDeveloper", 600);
 const employee2 = new Employee("Adam", "Johnson", 24, "PythonDeveloper", 500);
@@ -39,5 +38,5 @@ const employee2 = new Employee("Adam", "Johnson", 24, "PythonDeveloper", 500);
 console.log(employee1);
 console.log(employee2);
 
-console.log(`${employee1.fullName}, year salary: ${Employee.showYearSalary(employee1)}`);
-console.log(`${employee2.fullName}, year salary: ${Employee.showYearSalary(employee2)}`);
+console.log(`${employee1.fullName}, year salary: ${employee1.showYearSalary()}`);
+console.log(`${employee1.fullName}, year salary: ${employee2.showYearSalary()}`);
